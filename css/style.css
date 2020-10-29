@@ -17,7 +17,7 @@ header{
     color: #38808F;
     font-weight:300;
     font-size:3Vh;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     
 }
 #cocoLogo a:hover{
@@ -38,7 +38,7 @@ body{
     font-size: 2vw;
 }
 .aboutCoco h2{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     font-size:36px;
     color:#ACC3D1;
 }
@@ -102,7 +102,7 @@ b{
     "LNFY LNFY"
     "Venture Fetch"
     "Final Final"
-    "Product Illos"
+    "NSASITE Product"
 
 }
 
@@ -150,8 +150,8 @@ b{
     position: relative;
 
 }
-#projectIllustration{
-    grid-area: Illos;
+#projectNSA{
+    grid-area: NSASITE;
     background-color: aqua;
 }
 .heading {
@@ -167,7 +167,7 @@ b{
 }
 
 .titleBox h2{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     font-size:3vh;
     color:#253746;
     padding:0;
@@ -234,12 +234,12 @@ footer{
     margin: 0px 15%;
     display: grid;
     grid-template-columns: 1fr 1.75fr;
-    grid-template-rows: 7em 25em 7em;
+    grid-template-rows: 4em 20em 7em;
 }
 
 
 .aboutMeArea {
-    display:flex;
+    display:grid;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -247,32 +247,80 @@ footer{
     cursor: pointer;
     display: grid;
     align-content: end;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
   }
 
 #myPicture{
-      background-color: aqua;
-      grid-column: 1 / span 1;
+    background-color: aqua;
+    grid-column: 1 / span 1;
     grid-row: 1 / span 3;
 
   }
 #hiThere{
-      background-color: darkgreen;
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 1;
-  }
-#aboutMeText{
-      background-color: blueviolet;
-      grid-column: 2 / span 1;
-      grid-row: 2 / span 1;
+    display:flex;
+    justify-content: center;
+    align-items:start;
+    background-color: none;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+
   }
 
+#hiThere h2{
+    font-family: 'Raleway', sans-serif;
+
+}  
+#aboutMeText{
+    display:flex;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    flex-direction:column;
+  }
+
+
+#skillsTitle{
+    font-family: 'Raleway', sans-serif;
+    font-style:bold;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+
+
+
+}
+.mainBio{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2vh;
+}
+
+
+.mySkills{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2vh;
+    color:black;
+}
+
+
 #Resume{
-    background-color: darksalmon;
+    display:flex;
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
+    justify-content:center;
+    align-items:center;
 }
-#test1{
-    background-color:black;
+
+#Resume button{
+    width:12em;
+    height: 4em;
+    border-color:38808F;
+    background-color:rgba(255,255,255,0);
+    transition: 0.5s;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 15px;
 }
+#Resume button:hover{
+    background-color:rgba(0,0,0,0.15);
+    text-decoration:underline;
+    border-color:rgba(255,255,255,0);
+}
+
