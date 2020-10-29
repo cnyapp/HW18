@@ -234,7 +234,7 @@ footer{
     margin: 0px 15%;
     display: grid;
     grid-template-columns: 1fr 1.75fr;
-    grid-template-rows: 4em 20em 7em;
+    grid-template-rows: 1fr 4fr 1fr;
 }
 
 
